@@ -1,0 +1,68 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer {
+    margin-top: 5rem;
+    margin-bottom: 0;
+    background-color: #222222;
+    padding: 1rem 0;
+
+    &__contacto{
+        margin-top: 4rem;
+        @include m.tablet{
+            margin-top: 0rem;
+        }
+    }
+
+    &__contenedor{
+        width: 95%;
+        max-width: 1200px;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        @include m.tablet {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__navegacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+        @include m.tablet {
+            margin-top: 0;
+            flex-direction: row;
+        }
+    }
+    &__enlace{
+        font-weight: 900;
+        font-size: 2.5rem;
+    }
+    &__text{
+        color: #E1E1E1;
+        font-size: 1.5rem;
+    }
+    &__text:hover{
+        color: #FFD261;
+    }
+    &__raya{
+        color: #E1E1E1;
+    }
+    &__derechos{
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        // margin: 2rem 0;
+        // padding: 0;
+    }
+    &__redes{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+

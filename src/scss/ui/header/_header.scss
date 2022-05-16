@@ -1,0 +1,40 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+.header {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include m.tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 120px;
+        height: 120px;
+    }
+    &__image{
+        border-radius: 50%;
+    }
+    &__navegacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+        @include m.tablet {
+            margin-top: 0;
+            flex-direction: row;
+        }
+    }
+    &__enlace{
+        font-weight: 900;
+        font-size: 2.5rem;
+        color: #2B2F36;
+    }
+    &__enlace:hover{
+        font-weight: 900;
+        font-size: 2.5rem;
+        color: #FFD261;
+    }
+}

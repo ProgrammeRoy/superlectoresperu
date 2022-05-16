@@ -1,0 +1,35 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.advance{
+    &__grid{
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem 4rem;
+        padding-top: 2rem;
+        
+    }
+
+    &__container{
+        min-width: 20rem;
+        background-size: cover;
+        background-position: center;
+        &__image{
+            border-radius: 2rem;
+        }
+    }
+    &__texto{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title{
+        font-size: 5rem;
+    }
+    &__content{
+        font-size: 3rem;
+    }
+}
+
