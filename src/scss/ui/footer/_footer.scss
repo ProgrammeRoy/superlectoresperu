@@ -42,12 +42,18 @@
         font-weight: 900;
         font-size: 2.5rem;
     }
+    &__nav{
+        color: #E1E1E1;
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+    &__nav:hover{
+        color: #FFD261;
+    }
     &__text{
         color: #E1E1E1;
         font-size: 1.5rem;
-    }
-    &__text:hover{
-        color: #FFD261;
+        justify-content: center;
     }
     &__raya{
         color: #E1E1E1;
@@ -64,5 +70,49 @@
         flex-direction: row;
         gap: 3rem;
     }
+    &__icon1{
+        height: 3rem;
+        &::before{
+            content: '';
+            display: inline-block;
+            background-image: url(../img/icon_address.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 3rem;
+            height: 3rem;
+            background-size: cover;
+            vertical-align: middle;
+            margin-right: 1rem;
+        }
+    }
+    &__icon2{
+        height: 3rem;
+        &::before{
+            content: '';
+            display: inline-block;
+            background-image: url(../img/icon_phone.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 3rem;
+            height: 3rem;
+            background-size: cover;
+            vertical-align: middle;
+            margin-right: 1rem;
+        }
+    }
+    &__icon3{
+        height: 3rem;
+        &::before{
+            content: '';
+            display: inline-block;
+            background-image: url(../img/icon_email.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 3rem;
+            height: 3rem;
+            background-size: cover;
+            vertical-align: middle;
+            margin-right: 1rem;
+        }
+    }
 }
-

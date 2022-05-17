@@ -5,19 +5,24 @@
 // }
 
 .hero {
+    margin-top: 5rem;
     min-height: 60rem;
-    background-image: url(../img/hero1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: v.$blanco;
-    &__texto {
-        max-width: 60rem;
+        background-image: url(../img/hero1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: v.$blanco;
+        &__texto {
+            max-width: 60rem;
+        }
+    @include m.tablet{
+        margin-top: 0;
     }
+    
 }
 

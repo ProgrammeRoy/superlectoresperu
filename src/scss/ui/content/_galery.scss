@@ -2,42 +2,53 @@
 @use 'base/variables' as v;
 
 .galery{
-    margin-top: 5rem;
+    
+    
     &__title{
         text-align: center;
+        color: #2B2E36;
     }
     &__grid{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        margin-top: 0;
+        @include m.tablet{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
     }
     &__image1{
         height: 40rem;
         background-image: url(../img/galeria1.png);
         background-repeat: no-repeat;
         background-size: cover;
-        border: 1px solid black;
+        border: 1px solid gray;
     }
     &__image2{
         height: 40rem;
         background-image: url(../img/galeria2.png);
         background-repeat: no-repeat;
         background-size: cover;
-        border: 1px solid black;
+        border: 1px solid gray;
     }
     &__image3{
         height: 40rem;
         background-image: url(../img/galeria3.png);
         background-repeat: no-repeat;
         background-size: cover;
-        border: 1px solid black;
+        border: 1px solid gray;
     }
     &__image4{
         height: 40rem;
         background-image: url(../img/galeria4.png);
         background-repeat: no-repeat;
         background-size: cover;
-        border: 1px solid black;
+        border: 1px solid gray;
+    }
+
+    @include m.tablet{
+        margin-top: 5rem;
     }
 
     

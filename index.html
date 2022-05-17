@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Delivery</title>
+    <title>SuperLectoresPeru</title>
 
+    <link rel="icon" href="logo">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
@@ -18,14 +19,14 @@
     <header class="header contenedor">
         <div class="header__logo">
             <a href="index.html">
-                <img class="header__image" src="build/img/logo-plch.avif" alt="logo pequenos lectores">
+                <img class="header__image" src="build/img/logosuper.jpeg" alt="logo pequenos lectores">
             </a>
         </div>
         <nav class="header__navegacion">
-            <a href="#"><span class="header__enlace">Inicio</span></a>
-            <a href="#"><span class="header__enlace">Unete</span></a>
-            <a href="#"><span class="header__enlace">Dona</span></a>
-            <a href="#"><span class="header__enlace">Contactanos</span></a>
+            <a href="index.html"><span class="header__enlace">Inicio</span></a>
+            <a href="#joinus"><span class="header__enlace">Unete</span></a>
+            <a href="#donaciones"><span class="header__enlace">Dona</span></a>
+            <a href="#contactanos"><span class="header__enlace">Contactanos</span></a>
         </nav>
     </header>
 
@@ -41,14 +42,14 @@
                 <img class="info__container__image" src="build/img/kids.png" alt="niños lectores">
             </div>
             <div class="info__texto">
-                <h2 class="info__title">Ayudanos a construir ciudadania</h2>
+                <h2 class="info__title">Ayudanos a construir nuestra identidad</h2>
                 <p class="info__content">Niños y niñas capaces de mejorar el mundo empezando por ellos mismos</p>
             </div>
         </div>
     </section>
 
     <!-- Join -->
-    <section class="join">
+    <section id="joinus" class="join contenedor">
         <h1 class="join__texto">Unete a nuestro staff!</h1>
     </section>
 
@@ -80,22 +81,36 @@
         </div>
     </section>
 
+    <!-- Dona -->
+    <section id="donaciones" class="info contenedor">
+        <div class="info__grid">
+            <div class="info__imagen">
+                <img class="info__container__image" src="build/img/donaciones.png" alt="niños lectores">
+            </div>
+            <div class="info__texto">
+                <h2 class="info__title">Donaciones</h2>
+                <p class="info__content">Para lograr esta misión puedes contribuir con tu apoyo, que será de mucha ayuda para los niños. Escribenos al correo para poder ayudarte.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="contactanos" class="footer">
         <div class="footer__contenedor">
             <nav class="footer__navegacion ">
-                <a href="#"><span class="footer__enlace footer__text">Inicio</span></a>
-                <a href="#"><span class="footer__enlace footer__text">Unete</span></a>
-                <a href="#"><span class="footer__enlace footer__text">Dona</span></a>
-                <a href="#"><span class="footer__enlace footer__text">Contactanos</span></a>
+                <a href="index.html"><span class="footer__enlace footer__nav">Inicio</span></a>
+                <a href="#joinus"><span class="footer__enlace footer__nav">Unete</span></a>
+                <a href="#donaciones"><span class="footer__enlace footer__nav">Dona</span></a>
+                <a href="#contactanos"><span class="footer__enlace footer__nav">Contactanos</span></a>
             </nav>
             <div class="footer__contacto">
-                <p class='footer__text'>Dirección: Monte Santa Inés Mz C Lt 3, Los Rosales Chaclacayo</p>
-                <p class='footer__text'>Teléfono: +5113031925</p>
-                <p class='footer__text'>Email: superlectoresperu@gmail.com</p>
+                <!-- <div class="footer__icon1"></div> -->
+                <p class='footer__text footer__icon1'>Dirección: Monte Santa Inés Mz C Lt 3, Los Rosales Chaclacayo</p>
+                <p class='footer__text footer__icon2'>Teléfono: +5113031925</p>
+                <p class='footer__text footer__icon3'>Email: superlectoresperu@gmail.com</p>
                 <div class="footer__redes">
                     <a class="redes__link" href="https://www.facebook.com/pages/category/Non-Governmental-Organization--NGO-/Peque%C3%B1os-Lectores-Chaclacayo-Per%C3%BA-107311094077011/" target="_blank"><img src="build/img/icon_facebook.svg" alt="link facebook"></a>
-                    <a class="redes__link href="https://www.youtube.com/channel/UCSegvCD5JEt_FJzvLSiL09Q" target="_blank"><img src="build/img/icon_youtube.svg" alt="link youtube"></a>
+                    <a class="redes__link" href="https://www.youtube.com/watch?v=nz4Gb5gzYwc&ab_channel=peque%C3%B1oslectoreschaclacayo" target="_blank"><img src="build/img/icon_youtube.svg" alt="link youtube"></a>
                 </div>
             </div>
         </div>
