@@ -9,6 +9,8 @@
 
     &__contacto{
         margin-top: 4rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
         @include m.tablet{
             margin-top: 0rem;
         }
@@ -69,11 +71,14 @@
         display: flex;
         flex-direction: row;
         gap: 3rem;
-        margin-left: 3rem;
     }
     &__icon1{
-        height: 3rem;
         margin-top: 1rem;
+        display: block;
+        text-align: center;
+        @include m.tablet{
+            text-align: left;
+        }
         &::before{
             content: '';
             display: inline-block;
@@ -88,9 +93,12 @@
         }
     }
     &__icon2{
-        height: 3rem;
         margin-top: 1rem;
         display: block;
+        text-align: center;
+        @include m.tablet{
+            text-align: left;
+        }
         &::before{
             content: '';
             display: inline-block;
@@ -105,10 +113,13 @@
         }
     }
     &__icon3{
-        height: 3rem;
         display: block;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        text-align: center;
+        @include m.tablet{
+            text-align: left;
+        }
         &::before{
             content: '';
             display: inline-block;

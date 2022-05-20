@@ -1,13 +1,14 @@
 @use 'base/mixins' as m;
 @use 'base/variables' as v;
 
-.advance{
+.donaciones{
     background-color: #F2F2F2;
     margin: 4rem 0;
     padding: 4rem 0;
+
     &__grid{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         @include m.tablet{
             flex-direction: row;
         }
@@ -20,10 +21,8 @@
             border-radius: 2rem;
         }
     }
-
     &__texto{
         padding: 0 1rem;
-        color: #2B2E36;
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -35,6 +34,7 @@
     }
     &__content{
         font-size: 3rem;
+        color: #2B2E36;
     }
 }
 

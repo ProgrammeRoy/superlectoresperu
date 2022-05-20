@@ -2,15 +2,18 @@
 @use 'base/variables' as v;
 
 .info{
+    background-color: #F2F2F2;
+    margin: 4rem 0;
+    padding: 4rem 0;
+
+    &__imagen{
+        order: 1;
+    }
     &__grid{
-        padding-top: 0rem;
-        margin-top: 7rem;
+        display: flex;
+        flex-direction: column-reverse;
         @include m.tablet{
-            margin-top: 4rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            padding-top: 2rem;
-            gap: 4rem;
+            flex-direction: row;
         }
     }
 
@@ -23,6 +26,8 @@
         }
     }
     &__texto{
+        padding: 0 1rem;
+        order: 2;
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -31,19 +36,10 @@
     &__title{
         color: #2B2E36;
         font-size: 5rem;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        @include m.tablet{
-            margin-top: 0;
-        }
     }
     &__content{
         font-size: 3rem;
-        margin: 0;
         color: #2B2E36;
-        @include m.tablet{
-            margin-top: 3rem;
-        }
     }
 }
 
