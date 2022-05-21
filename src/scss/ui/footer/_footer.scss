@@ -70,7 +70,12 @@
     &__redes{
         display: flex;
         flex-direction: row;
+        margin-top: 2rem;
         gap: 3rem;
+        justify-content: space-between;
+        @include m.tablet{
+            margin-top: 0;
+        }
     }
     &__icon1{
         margin-top: 1rem;

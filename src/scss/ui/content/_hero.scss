@@ -1,10 +1,41 @@
 @use 'base/mixins' as m;
 @use 'base/variables' as v;
-// body{
-//     background-color: #23C1E8;
-// }
 
-.hero {
+.hero{
+    &__grid{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-rows: repeat(3,30rem);
+        min-height: 35rem;
+        gap: 2rem;
+        @include m.tablet{
+            grid-template-rows: unset;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    &__first{
+        background-image: url(../img/kids.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10%;
+    }
+    &__second{
+        background-image: url(../img/hero1.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10%;
+        background-repeat: no-repeat;
+    }
+    &__third{
+        background-image: url(../img/galeria1.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10%;
+    }
+}
+.hero2 {
     margin-top: 1rem;
     min-height: 60rem;
     background-image: url(../img/hero1.png);
@@ -17,12 +48,14 @@
     align-items: center;
     text-align: center;
     color: v.$blanco;
+    // &__grid{
+    //     display: flex;
+    // }
     &__texto {
         max-width: 60rem;
     }
     @include m.tablet{
         margin-top: 0;
     }
-    
 }
 

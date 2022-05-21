@@ -1,0 +1,16 @@
+.message{
+    margin: 4rem;
+    &__chat{
+        border: gray solid 0.2rem;
+        height: 17rem;
+        border-radius: 2rem;
+        
+    }
+    &__text{
+        height: 85%;
+        width: 98%;
+        margin: 2rem auto;
+        text-overflow: ellipsis;
+        overflow: scroll;
+    }
+}
