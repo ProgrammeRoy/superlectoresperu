@@ -7,10 +7,21 @@
         
     }
     &__text{
-        height: 85%;
-        width: 98%;
+        height: 80%;
+        width: 99%;
         margin: 2rem auto;
         text-overflow: ellipsis;
         overflow: scroll;
+        overflow-x: hidden;
+        &::-webkit-scrollbar{
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track{
+            background: white;
+        }
+        &::-webkit-scrollbar-thumb{
+            background: gray;
+        }
     }
+
 }

@@ -64,8 +64,6 @@
         color: white;
         font-size: 1.5rem;
         text-align: center;
-        // margin: 2rem 0;
-        // padding: 0;
     }
     &__redes{
         display: flex;
@@ -87,7 +85,7 @@
         &::before{
             content: '';
             display: inline-block;
-            background-image: url(../img/icon_address.png);
+            background-image: url(/build/img/icon_address.webp);
             background-repeat: no-repeat;
             background-position: center center;
             width: 3rem;
@@ -107,7 +105,7 @@
         &::before{
             content: '';
             display: inline-block;
-            background-image: url(../img/icon_phone.png);
+            background-image: url(/build/img/icon_phone.webp);
             background-repeat: no-repeat;
             background-position: center center;
             width: 3rem;
@@ -128,7 +126,7 @@
         &::before{
             content: '';
             display: inline-block;
-            background-image: url(../img/icon_email.png);
+            background-image: url(/build/img/icon_email.webp);
             background-repeat: no-repeat;
             background-position: center center;
             width: 3rem;

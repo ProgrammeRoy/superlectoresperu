@@ -7,25 +7,32 @@
     padding: 4rem 0;
 
     &__grid{
-        display: flex;
-        flex-direction: column-reverse;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
         @include m.tablet{
-            flex-direction: row;
+            grid-template-rows: unset;
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 
-    &__container{
+    &__imagen{
+        background-image: url(/build/img/donaciones.webp);
         background-size: cover;
         background-position: center;
-        &__image{
-            border-radius: 2rem;
+        border-radius: 2rem;
+        @include m.tablet{
+            order: 1;
         }
     }
+
     &__texto{
         padding: 0 1rem;
         text-align: center;
         align-items: center;
         justify-content: center;
+        @include m.tablet{
+            order: 2;
+        }
     }
 
     &__title{

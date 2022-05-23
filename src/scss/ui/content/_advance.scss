@@ -6,19 +6,20 @@
     margin: 4rem 0;
     padding: 4rem 0;
     &__grid{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
         @include m.tablet{
-            flex-direction: row;
+            grid-template-rows: unset;
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 
-    &__container{
+    &__imagen{
+        background-image: url(/build/img/construccion2.webp);
         background-size: cover;
         background-position: center;
-        &__image{
-            border-radius: 2rem;
-        }
+        background-repeat: no-repeat;
+        border-radius: 2rem;
     }
 
     &__texto{

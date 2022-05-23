@@ -14,48 +14,26 @@
         }
     }
     &__first{
-        background-image: url(../img/kids.png);
+        background-image: url(/build/img/misscarmela.webp);
         background-size: cover;
-        background-position: center;
+        background-position: left;
         background-repeat: no-repeat;
         border-radius: 10%;
     }
     &__second{
-        background-image: url(../img/hero1.png);
+        background-image: url(/build/img/galeria1.webp);
         background-size: cover;
         background-position: center;
         border-radius: 10%;
         background-repeat: no-repeat;
     }
     &__third{
-        background-image: url(../img/galeria1.png);
+        background-image: url(/build/img/aprendiendoaescribir.webp);
         background-size: cover;
-        background-position: center;
+        background-position: left;
         background-repeat: no-repeat;
         border-radius: 10%;
     }
 }
-.hero2 {
-    margin-top: 1rem;
-    min-height: 60rem;
-    background-image: url(../img/hero1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: v.$blanco;
-    // &__grid{
-    //     display: flex;
-    // }
-    &__texto {
-        max-width: 60rem;
-    }
-    @include m.tablet{
-        margin-top: 0;
-    }
-}
+
 

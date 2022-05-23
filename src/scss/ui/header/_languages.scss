@@ -1,0 +1,46 @@
+@use 'base/mixins' as m;
+
+.languages{
+    padding: 1rem 0 2rem 0;
+    text-align: right;
+    @include m.tablet{
+        padding-bottom: 0;
+    }
+}
+.en{
+    color: #002663;
+}
+.es{
+    color: #F2BA01;
+}
+.check{
+    position: relative;
+    width: 50px;
+    height: 17px;
+}
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #002663;
+    border-radius: 25px;
+}
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #F2BA01;
+}
+.check:checked:before{
+    background: #F2BA01;
+}
