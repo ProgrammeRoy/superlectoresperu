@@ -1,22 +1,19 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
-
 .footer {
     margin-top: 5rem;
     margin-bottom: 0;
     background-color: #222222;
     padding: 1rem 0;
-
-    &__contacto{
+    &__contacto {
         margin-top: 4rem;
         margin-right: 1rem;
         margin-left: 1rem;
-        @include m.tablet{
+        @include m.tablet {
             margin-top: 0rem;
         }
     }
-
-    &__contenedor{
+    &__contenedor {
         width: 95%;
         max-width: 1200px;
         margin: 2rem auto;
@@ -40,49 +37,49 @@
             flex-direction: row;
         }
     }
-    &__enlace{
+    &__enlace {
         font-weight: 900;
         font-size: 2.5rem;
     }
-    &__nav{
+    &__nav {
         color: #E1E1E1;
         font-size: 1.5rem;
         justify-content: center;
     }
-    &__nav:hover{
+    &__nav:hover {
         color: #FFD261;
     }
-    &__text{
+    &__text {
         color: #E1E1E1;
         font-size: 1.5rem;
         justify-content: center;
     }
-    &__raya{
+    &__raya {
         color: #E1E1E1;
     }
-    &__derechos{
+    &__derechos {
         color: white;
         font-size: 1.5rem;
         text-align: center;
     }
-    &__redes{
+    &__redes {
         display: flex;
         flex-direction: row;
         margin-top: 2rem;
         gap: 3rem;
         justify-content: space-between;
-        @include m.tablet{
+        @include m.tablet {
             margin-top: 0;
         }
     }
-    &__icon1{
+    &__icon1 {
         margin-top: 1rem;
         display: block;
         text-align: center;
-        @include m.tablet{
+        @include m.tablet {
             text-align: left;
         }
-        &::before{
+        &::before {
             content: '';
             display: inline-block;
             background-image: url(/build/img/icon_address.webp);
@@ -95,14 +92,14 @@
             margin-right: 1rem;
         }
     }
-    &__icon2{
+    &__icon2 {
         margin-top: 1rem;
         display: block;
         text-align: center;
-        @include m.tablet{
+        @include m.tablet {
             text-align: left;
         }
-        &::before{
+        &::before {
             content: '';
             display: inline-block;
             background-image: url(/build/img/icon_phone.webp);
@@ -115,15 +112,15 @@
             margin-right: 1rem;
         }
     }
-    &__icon3{
+    &__icon3 {
         display: block;
         margin-top: 1rem;
         margin-bottom: 1rem;
         text-align: center;
-        @include m.tablet{
+        @include m.tablet {
             text-align: left;
         }
-        &::before{
+        &::before {
             content: '';
             display: inline-block;
             background-image: url(/build/img/icon_email.webp);
@@ -136,4 +133,16 @@
             margin-right: 1rem;
         }
     }
+}
+
+.btn-wsp {
+    background-image: url(/build/img/whatsapp-icon.svg);
+    width: 5.5rem;
+    height: 5.5rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: collapse;
 }
